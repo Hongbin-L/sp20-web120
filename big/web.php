@@ -1,7 +1,8 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Hongbin's WEB120 Big Website</title>
+<title>Hongbin Liu's WEB120 Big Website Web Accessibility</title>
 <meta name="viewport" content="width=device-width" />
 <meta name="robots" content="noindex,nofollow" />
 <meta charset="utf-8">
@@ -22,7 +23,7 @@
 <!-- START WRAPPER -->
 <main class="wrapper">
 <header>
-  <h1><a href="index.php"><i class="logo fa fa-home"></i> Hongbin's WEB120 Big Website</a></h1>
+  <h1><a href="index.php"><i class="logo fa "></i> Hongbin Liu's WEB120 Portal</a></h1>
 <div id="cssmenu">
   <ul>
      <li><a href="../index.php"><span><i class="fa fa-fw fa-bank"></i> WEB120</span></a></li>
@@ -43,44 +44,45 @@
   </ul>
 </div>
 </header>
-    <main role="main">
-	 <header><h3>Contact Hongbin</h3></header>
-	<?php
-        /*
-         * Below are 2 different forms to be re-used       
-         * 
-         * Only use one at a time, comment out the other!       
-         *
-         */
+        
+<!-- START LEFT COL -->
+<section>
+ <h2 class="pageID"></h2>           <h2>WEB Accessibility</h2>
+           <div class='embed-container'>
+               <iframe src='https://www.youtube.com/embed/20SHvU2PKsM' frameborder='0' allowfullscreen></iframe>
+           </div>
+        </section>
+       <!-- END LEFT COLUMN -->
 
-        include 'includes/contact_include.php'; #site keys & code here
-    
-        $toAddress = "liu01010303@gmail.com";  //place your/your client's email address here
-        $toName = "King"; //place your client's name here
-        $website = "Purplestar";  //place NAME of your client's website
+       <!-- START RIGHT COLUMN -->
+       <aside>
+            <h3>Additional WEB Accessibility Resources</h3>
+           <ul>
+               <li><a href="#">Link 1</a></li>
+               <li><a href="#">Link 2</a></li>
+               <li><a href="#">Link 3</a></li>
+           </ul>
+       </aside>
+<!-- START Footer -->
+<footer>
+  <p><small>&copy; 2020 - 2020 by <a href="contactme.php" target="_blank">Hongbin Liu</a>, All Rights Reserved ~ <a href="http://validator.w3.org/check/referer" target="_blank">Valid HTML</a> ~ <a href="http://jigsaw.w3.org/css-validator/check?uri=referer" target="_blank">Valid CSS</a></small></p>
+</footer>
+<!-- END Footer --> 
+</main>
+<!-- END WRAPPER -->
 
-        echo loadContact('simple.php');#demonstrates a simple contact form
-        //echo loadContact('multiple.php');#demonstrates multiple form elements
-
-	?>
-
-     <footer>
-      <p><small>&copy; 2020 by <a href="contact.php">Contact Hongbin Liu </a>, All Rights Reserved ~ <a href="http://validator.w3.org/check/referer" target="_blank">Valid HTML</a> ~ <a href="http://jigsaw.w3.org/css-validator/check?uri=referer" target="_blank">Valid CSS</a></small></p>
-    </footer>
-  </main>
-     
-  <!-- Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon -->
-     
-  <script>
-    function myFunction() {
-        var x = document.getElementById("myTopnav");
-        if (x.className === "topnav") {
-            x.className += " responsive";
-        } else {
-            x.className = "topnav";
-        }
-    }   
-  </script>
-     </main>
- </body>
+    <!-- JavaScript associated with the W3Schools.com Top Navigation Response Exercise --> 
+    <script>
+/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+     </script>
+<script src="js/lightbox.js"></script>
+</body>
 </html>

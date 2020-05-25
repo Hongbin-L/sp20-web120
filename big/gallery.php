@@ -43,44 +43,47 @@
   </ul>
 </div>
 </header>
-    <main role="main">
-	 <header><h3>Contact Hongbin</h3></header>
-	<?php
-        /*
-         * Below are 2 different forms to be re-used       
-         * 
-         * Only use one at a time, comment out the other!       
-         *
-         */
+     <!-- START LEFT COLUMN -->
+     <section>
+           <h2>Lightbox II Gallery</h2>
+           <div>
+                <figure>
+                    <a href="images/breakfast-800x600.jpg" data-lightbox="meals" data-title="Breakfast Beverages!">
+                    <img src="images/breakfast-175x175.jpg" alt="Breakfast" />
+                    <figcaption>Breakfast</figcaption>
+                    </a>
+               </figure>
+                <figure>
+                    <a href="images/lunch-800x600.jpg" data-lightbox="meals" data-title="Enormous Sandwich!">
+                    <img src="images/lunch-175x175.jpg" alt="Lunch" />
+                    <figcaption>Lunch</figcaption>
+                    </a>
+               </figure>
+               <figure>
+                    <a href="images/dinner-800x600.jpg" data-lightbox="meals" data-title="Turkey is delicious anytime of the year!">
+                   <img src="images/dinner-175x175.jpg" alt="Dinner" />
+                    <figcaption>Dinner</figcaption>
+                   </a>
+               </figure>
+           </div>
+        </section>
+<!-- END LEFT COLUMN -->
 
-        include 'includes/contact_include.php'; #site keys & code here
-    
-        $toAddress = "liu01010303@gmail.com";  //place your/your client's email address here
-        $toName = "King"; //place your client's name here
-        $website = "Purplestar";  //place NAME of your client's website
-
-        echo loadContact('simple.php');#demonstrates a simple contact form
-        //echo loadContact('multiple.php');#demonstrates multiple form elements
-
-	?>
-
+<!-- START RIGHT COLUMN -->
+<aside>
+<h3>Additional Slideshow Image Gallery Resources</h3>
+  <ul>
+      <li><a href="#">Link 1</a></li>
+      <li><a href="#">Link 2</a></li>
+      <li><a href="#">Link 3</a></li>
+  </ul>
+</aside>
+<!-- END RIGHT COLUMN -->
      <footer>
       <p><small>&copy; 2020 by <a href="contact.php">Contact Hongbin Liu </a>, All Rights Reserved ~ <a href="http://validator.w3.org/check/referer" target="_blank">Valid HTML</a> ~ <a href="http://jigsaw.w3.org/css-validator/check?uri=referer" target="_blank">Valid CSS</a></small></p>
     </footer>
   </main>
      
-  <!-- Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon -->
-     
-  <script>
-    function myFunction() {
-        var x = document.getElementById("myTopnav");
-        if (x.className === "topnav") {
-            x.className += " responsive";
-        } else {
-            x.className = "topnav";
-        }
-    }   
-  </script>
-     </main>
+      <script src="js/lightbox.js"></script>
  </body>
 </html>
