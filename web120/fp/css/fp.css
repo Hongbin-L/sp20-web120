@@ -1,0 +1,106 @@
+/* Desktops and laptops ----------- */
+@media all and (min-width:1280px) {
+main{
+    background-color: #fff;
+    width: 80%;
+    margin: auto;
+}
+
+
+html{
+    background-color: #ccc;
+}
+
+h1 a {
+    text-decoration: none;
+}
+
+section {
+    float: left;
+    width: 65%;
+}
+
+aside {
+    float: left;
+    width: 35%;
+}
+
+footer{
+    padding:1em;
+    text-align: center;
+    clear: both;
+}
+
+fullwidth{
+    width: 100%;
+}
+}
+
+/* MOBILE SYTLES */
+
+@media all and (max-device-width:767px) {
+    main{
+        width: 100%;
+    }
+    
+    section {
+        float: none;
+        width: 100%;
+    }
+
+    aside {
+        float: left;
+        width: 34%;
+    }
+
+}
+
+img {
+    width:100%;
+    border: 1px solid #000;/* width style color */
+}
+
+div.gallery{
+    text-align: center;
+}
+
+figure{
+    display: inline-block;
+    margin: .25%;
+}
+
+/* START - EMBED RESPONSIVELY STYLES */
+.embed-container{
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.embed-container iframe{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+}
+.button{
+    background-color:purple;
+    color:white;
+    border-color: black;
+    border-width: thin;
+}
+
+.button:hover{
+    background-color:white;
+    color:purple;
+    border-width: thin;
+    border-color: purple;
+}
+
+.newDiscussionText{
+    width: 100%;
+    height:auto;
+}
+/* END - EMBED RESPONSIVELY STYLES */

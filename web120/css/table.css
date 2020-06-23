@@ -1,0 +1,50 @@
+/* styles for tables*/
+
+table {
+    border-collapse: collapse;
+    border: 1px solid rgb(95,95,95);
+    width: 80%;
+    margin: auto;
+}
+
+tr:nth-child(even), thead tr {
+    background-color: rgb(95,95,95);
+    color: #000000;
+}
+
+table. client {
+    margin: 40px auto;
+}
+
+table.client {
+    border: 1px solid;
+    text-align: left;
+    width:30%;
+}
+
+table.client tr:nth-child(even)
+{
+    background-color: white;
+}
+
+table.audience {
+    margin: 50px auto;
+}
+
+table.audience {
+    text-align: center;
+}
+
+table.audience tr:nth-child(even)
+{
+    background-color: white;
+}
+
+thead tr {
+    background-color: purple;
+}
+
+td, th {
+    border: 1px dotted #000;
+    padding: 1em;
+}
